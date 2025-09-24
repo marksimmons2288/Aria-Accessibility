@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Webpage with Aria</title>
+</head>
+<h1>Accessible Internet Rich Applications (ARIA)</h1>
+
+<h2>What is ARIA?</h2>
+
+<p>ARIA improves the accessibility of web content and applications for users with disabilities.</p>
+<p>ARIA provides additional information to enhance the meaning of HTML elements, making them more assistive to technologies like screen readers.</p>
+
+<h2>Examples of ARIA html Resources</h2>
+
+<!-- Role Navigation Example -->
+ <!-- role defines the purpose of the element -->
+<h3>Role Navigation</h3>
+<nav role="navigation">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Back</a></li>
+    </ul>
+</nav>
+
+<!-- Input field with ARIA Label -->
+ <!-- aria-label links the label with the input -->
+ <h3>ARIA Input Field with Label</h3>
+ <label for="username">Username:</label>
+ <input type="text" id="userName" aria-label="username">
+ <label for="password">Password:</label>
+ <input type="text" id="password" label="password">
+
+ <!-- Button with ARIA Label -->
+  <!-- aria-disabled indicates the button is inactive -->
+  <h3>Button with ARIA Label</h3>
+  <button aria-disabled="true">Submit</button>
+
+  <!-- Link with button role attribute -->
+   <!-- tells screen reader the element is a button -->
+    <h3>Link with Button Role</h3>
+<a href="#" role="button" tabindex="0" onclick="alert('Button clicked!')">Click Me</a>
+
+<body>
+    
+</body>
+</html>
