@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accessible Webpage with Aria</title>
 </head>
+<body>
+    
 <h1>Accessible Internet Rich Applications (ARIA)</h1>
 
 <h2>What is ARIA?</h2>
@@ -27,23 +29,24 @@
 
 <!-- Input field with ARIA Label -->
  <!-- aria-label links the label with the input -->
- <h3>ARIA Input Field with Label (Username)</h3>
+ <h3>ARIA Input Field with Label</h3>
  <label for="username">Username:</label>
- <input type="text" id="userName" aria-label="username">
+ <input type="text" for="userName" aria-label="username">
+ 
  <label for="password">Password:</label>
- <input type="text" id="password" label="password">
+ <input type="password" id="password" aria-label="Password">
 
  <!-- Button with ARIA Label -->
   <!-- aria-disabled indicates the button is inactive -->
   <h3>Button with ARIA Label</h3>
-  <button aria-disabled="true">Submit</button>
+  <button aria-label="Submit Form" disabled="true">Submit</button>
 
   <!-- Link with button role attribute -->
    <!-- tells screen reader the element is a button -->
     <h3>Link with Button Role</h3>
-<a href="#" role="button" tabindex="0" onclick="alert('Button clicked!')">Click Me</a>
+<a href="#" role="button" tabindex="0" onclick="alert('Button clicked!')">Click Me!</a>
 
-<body>
-    
-</body>
+
+
+    </body>
 </html>
