@@ -10,8 +10,9 @@
 </head>
 <body>
     <!-- Navigation with role attribute -->
+     <!-- describes the role  -->
     <div class="nav_bar">
-    <nav role="navigation">
+    <nav  aria-roledescription="navigation">
     <ul>
         <li><a href="Home">Home</a></li>
         <li><a href="About">About</a></li>
@@ -41,9 +42,9 @@
         <div class="main_form_field">
             <label for="firstName"
             class="main_form_field_label">First name:</label>
-            <!-- Aria Label  -->
-             <!-- Announces in the text "Enter your first name" used aria-label because there is not a <label> tag-->
-            <input type="text" id="firstName" aria-label="Enter  your first name"
+            <!-- Aria Label  (Role: text)-->
+             <!-- Announces in the text "Enter your first name here, in the text box" used aria-label because there is not a <label> tag or placeholder-->
+            <input type="text" id="firstName" aria-label="Enter  your first name here, in the text box"
             class="main_form_field_input" required>
         </div>
        
@@ -89,8 +90,14 @@
             
 
 
-            <!-- Submit button with aria-label -->
-         <button class="main_form_submit" type="submit" aria-label="This is a submit button">Submit</button>
+            <!-- Submit button with aria-label (Role: button) -->
+              <!-- Announces in the text "This is a submit button to submit your information" used aria-label to give context of the action the submit button will perfom (clarify the function)-->
+             
+         <button class="main_form_submit" type="submit" aria-label="This is a submit button to submit your infomation">Submit</button>
+
+          <!-- Aria link with button Role:
+           The link acts as a button which is descibed by the "role=button" the tabindex is for keyboard function, the onclick is for JS code to perfom the task, onkeydown handles the event without the use of the mouse. Click me behaves like a button but is a link (link not active) -->
+         <div role="button" tabindex="0" onclick="myFunciton()" onkeydown="handleButtonKeydown(e)">Click me</div>
          
          
         
