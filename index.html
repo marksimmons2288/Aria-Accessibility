@@ -9,6 +9,17 @@
     
 </head>
 <body>
+    <!-- Navigation with role attribute -->
+    <div class="nav_bar">
+    <nav role="navigation">
+    <ul>
+        <li><a href="Home">Home</a></li>
+        <li><a href="About">About</a></li>
+        <li><a href="Back">Back</a></li>
+    </ul>
+    </nav>
+    </div>
+
     <header class="header">
         <h1>Welcome to my Registration Form</h1>
     </header>
@@ -26,11 +37,13 @@
             <input type="checkbox" name=""> Entertainment
             </div>
         <!-- First Name -->
+         <!-- No need for Aria Label due to standard use of the semantic <label for -->
         <div class="main_form_field">
             <label for="firstName"
             class="main_form_field_label">First name:</label>
             <!-- Aria Label  -->
-            <input type="text" id="firstName" aria-label="Enter first name your name"
+             <!-- Announces in the text "Enter your first name" used aria-label because there is not a <label> tag-->
+            <input type="text" id="firstName" aria-label="Enter  your first name"
             class="main_form_field_input" required>
         </div>
        
