@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <!--Styles-->
+    <link rel="stylesheet" href="./styles.css">
+    
+</head>
+<body>
+    <!-- Navigation with role attribute -->
+     <!-- describes the role  -->
+    <div class="nav_bar">
+    <nav role="navigation">
+    <ul>
+        <li><a href="Home">Home</a></li>
+        <li><a href="About">About</a></li>
+        <li><a href="Back">Back</a></li>
+    </ul>
+    </nav>
+    </div>
+
+    <header class="header">
+        <h1>Welcome to my Registration Form</h1>
+    </header>
+   
+    <main>
+        <h2>Registrant Information:</h2>
+
+        <form action="" class="main_form" id="main-form">
+              <!-- Interests Checkboxes -->
+             <h3> Interest Catagories:</h3>
+            <div class="check_box_field">
+            <input type="checkbox" id="Sports" name="interests" value="Sports">
+            <label for="Sports">Sports</label>
+           
+            <input type="checkbox" id="Business" name="interests" value="Business"> <label for="business">Business</label>
+           
+            <input type="checkbox" id="Technology" name="interests" value="Technology"> <label for="Technology">Technology</label>
+           
+            <input type="checkbox" id="Entertainment" name="interests" value="Entertainment">
+            <label for="Entertainment">Entertainment</label>
+            </div>
+        <!-- First Name -->
+         <!-- No need for Aria Label due to standard use of the semantic <label for -->
+        <div class="main_form_field">
+            <label for="firstName"
+            class="main_form_field_label">First name:</label>
+            <!-- Aria Label  (Role: text)-->
+             <!-- Announces in the text "Enter your first name here, in the text box" used aria-label because there is not a <label> tag or placeholder-->
+            <input type="text" id="firstName" aria-label="Enter  your first name here, in the text box"
+            class="main_form_field_input" required>
+        </div>
+       
+        <!-- Last Name -->
+         <div class="main_form_field">
+            <label for="lastName" class="main_form_field_label">Last name:</label>
+            <input type="text" id="lastName"
+            class="main_form_field_input" required>
+         </div>
+
+         <!-- E-mail Input -->
+          <div class="main_form_field">
+           <label for="email"
+            class="main_form_field_label">E-mail:</label>
+            <input type="email" id="email"
+            class="main_form_field_input" required> 
+            </div> 
+
+            <!-- Date of Birth -->
+          <div class="main_form_field">
+           <label for="date"
+            class="main_form_field_label">Date of Birth:</label>
+            <input type="date" id="date"
+            class="main_form_field_input" required>
+            </div>
+
+            <!-- Password -->
+          <div class="main_form_field">
+           <label for="password"
+            class="main_form_field_label">Password:</label>
+            <input type="password" placeholder="Create Password" id="password" minlength="6"
+            class="main_form_field_input" required>
+          </div>
+        
+          <!-- Checkbox -->
+          <div class="main_form_field">
+           <label for="checkbox"
+            class="main_form_field_label">Check this box after all fields have been filled:</label>
+            <input type="checkbox" id="checkbox"
+            class="main_form_field_input" required>  
+          </div>  
+
+            
+
+
+            <!-- Submit button with aria-label (Role: button) -->
+              <!-- Announces in the text "This is a submit button to submit your information" used aria-label to give context of the action the submit button will perfom (clarify the function)-->
+               
+             
+         <button class="main_form_submit" type="submit" aria-label="This is a submit button to submit your infomation">Submit</button>
+
+          <!-- Aria link with button Role:
+           The link acts as a button which is descibed by the "role=button" the Click me behaves like a button but is a link (link not active) -->
+         
+           <a href="#" role="button">Click ME</a>
+
+         <!-- Tested for validation of Aria -->
+         
+        
+
+        
+    </form>
+    </main>
+            <div id="output"></div>
+    <!-- Javascript -->
+     <script src="./main.js"></script>
+    
+    
+    
+</body>
+</html>
