@@ -12,7 +12,7 @@
     <!-- Navigation with role attribute -->
      <!-- describes the role  -->
     <div class="nav_bar">
-    <nav  aria-roledescription="navigation">
+    <nav role="navigation">
     <ul>
         <li><a href="Home">Home</a></li>
         <li><a href="About">About</a></li>
@@ -32,10 +32,15 @@
               <!-- Interests Checkboxes -->
              <h3> Interest Catagories:</h3>
             <div class="check_box_field">
-            <input type="checkbox" name=""> Sports
-            <input type="checkbox" name=""> Business
-            <input type="checkbox" name=""> Technology
-            <input type="checkbox" name=""> Entertainment
+            <input type="checkbox" id="Sports" name="interests" value="Sports">
+            <label for="Sports">Sports</label>
+           
+            <input type="checkbox" id="Business" name="interests" value="Business"> <label for="business">Business</label>
+           
+            <input type="checkbox" id="Technology" name="interests" value="Technology"> <label for="Technology">Technology</label>
+           
+            <input type="checkbox" id="Entertainment" name="interests" value="Entertainment">
+            <label for="Entertainment">Entertainment</label>
             </div>
         <!-- First Name -->
          <!-- No need for Aria Label due to standard use of the semantic <label for -->
@@ -92,13 +97,14 @@
 
             <!-- Submit button with aria-label (Role: button) -->
               <!-- Announces in the text "This is a submit button to submit your information" used aria-label to give context of the action the submit button will perfom (clarify the function)-->
+               
              
          <button class="main_form_submit" type="submit" aria-label="This is a submit button to submit your infomation">Submit</button>
 
           <!-- Aria link with button Role:
-           The link acts as a button which is descibed by the "role=button" the tabindex is for keyboard function, the onclick is for JS code to perfom the task, onkeydown handles the event without the use of the mouse. Click me behaves like a button but is a link (link not active) -->
-         <div role="button" tabindex="0" onclick="myFunciton()" onkeydown="handleButtonKeydown(e)">Click me</div>
+           The link acts as a button which is descibed by the "role=button" the Click me behaves like a button but is a link (link not active) -->
          
+           <a href="#" role="button">Click ME</a>
 
          <!-- Tested for validation of Aria -->
          

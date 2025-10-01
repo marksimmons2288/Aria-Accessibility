@@ -34,8 +34,8 @@ mainForm.addEventListener('submit', function (event) {
     `<p>My First name is: ${firstNameInput.value}</p>
     <p>My Last name is: ${lastNameInput.value}</p>
     <p>My E-mail is: ${emailInput.value}</p>
-    <p>My Date of Birth is: ${dateInput.value}</p>
-    <p>My Password is: ${passwordInput.value}</p>`
+    <p>My Date of Birth is: ${dateInput.value}</p>`
+
 
 
 
@@ -54,7 +54,6 @@ mainForm.addEventListener('submit', function (event) {
 
    
     
-
 
 
 
